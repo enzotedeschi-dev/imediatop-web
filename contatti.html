@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contatti | iMediaTop</title>
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="Contattaci per parlare del tuo progetto: software su misura, siti web professionali, automazione aziendale. Rispondiamo entro 24 ore."
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/" aria-label="Torna alla home">
+        <img
+          src="/assets/img/logo/logo-imediatopDEF.png"
+          alt="iMediaTop Logo"
+          class="nav__logo"
+        />
+      </a>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <ul class="nav__list">
+        <li><a href="/" class="nav__link">Home</a></li>
+        <li>
+          <a href="/come-funziona" class="nav__link">Come funziona</a>
+        </li>
+        <li><a href="/services" class="nav__link">Servizi</a></li>
+        <li><a href="/sitiweb" class="nav__link">Siti Web</a></li>
+        <li>
+          <a href="/sviluppo" class="nav__link">Sviluppo</a>
+        </li>
+        <li><a href="/contatti" class="nav__link">Contatti</a></li>
+        <li class="nav__list-cta">
+          <a
+            href="https://dashboard.imediatop.it/client"
+            class="nav__link nav__link--reserved"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Area riservata</a
+          >
+        </li>
+      </ul>
+      <a
+        href="https://dashboard.imediatop.it/client"
+        class="nav__cta"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Area riservata</a
+      >
+    </nav>
+
+    <main>
+      <!-- ============================
+           SEZIONE CONTATTI
+           ============================ -->
+      <section class="contact" id="contact-form">
+        <div class="contact__inner">
+          <div class="contact__header" data-reveal>
+            <h2 class="contact__title">Contattaci</h2>
+            <p class="contact__desc">
+              Raccontaci il tuo progetto. Ti rispondiamo entro 24 ore con un
+              primo riscontro concreto.
+            </p>
+          </div>
+          <div class="contact__grid">
+            <!-- FORM -->
+            <div class="contact__form-wrap" data-reveal>
+              <form class="contact__form" id="contactForm" novalidate>
+                <div class="contact__field">
+                  <label class="contact__label" for="cf-name">
+                    Nome e cognome <span class="contact__req">*</span>
+                  </label>
+                  <input
+                    class="contact__input"
+                    type="text"
+                    id="cf-name"
+                    name="name"
+                    autocomplete="name"
+                    required
+                    placeholder="Il tuo nome"
+                  />
+                  <span class="contact__error" data-error="name"></span>
+                </div>
+
+                <div class="contact__field">
+                  <label class="contact__label" for="cf-email">
+                    Email <span class="contact__req">*</span>
+                  </label>
+                  <input
+                    class="contact__input"
+                    type="email"
+                    id="cf-email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    placeholder="email@azienda.it"
+                  />
+                  <span class="contact__error" data-error="email"></span>
+                </div>
+
+                <div class="contact__field">
+                  <label class="contact__label" for="cf-company">
+                    Azienda
+                    <span class="contact__optional">(opzionale)</span>
+                  </label>
+                  <input
+                    class="contact__input"
+                    type="text"
+                    id="cf-company"
+                    name="company"
+                    autocomplete="organization"
+                    placeholder="Nome azienda"
+                  />
+                </div>
+
+                <div class="contact__field">
+                  <label class="contact__label" for="cf-service">
+                    Di cosa hai bisogno?
+                    <span class="contact__req">*</span>
+                  </label>
+                  <div class="contact__select-wrap">
+                    <select
+                      class="contact__select"
+                      id="cf-service"
+                      name="service"
+                      required
+                    >
+                      <option value="" disabled selected>
+                        Seleziona un servizio
+                      </option>
+                      <option value="software">Software su misura</option>
+                      <option value="sitoweb">Sito web professionale</option>
+                      <option value="automazione">Automazione aziendale</option>
+                      <option value="integrazione">Integrazione sistemi</option>
+                      <option value="supporto">Supporto e manutenzione</option>
+                      <option value="altro">Altro</option>
+                    </select>
+                    <svg
+                      class="contact__select-arrow"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </div>
+                  <span class="contact__error" data-error="service"></span>
+                </div>
+
+                <div class="contact__field contact__field--full">
+                  <label class="contact__label" for="cf-message">
+                    Messaggio <span class="contact__req">*</span>
+                  </label>
+                  <textarea
+                    class="contact__textarea"
+                    id="cf-message"
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="Descrivi brevemente il tuo progetto o la tua esigenza..."
+                  ></textarea>
+                  <span class="contact__error" data-error="message"></span>
+                </div>
+
+                <div class="contact__field contact__field--full">
+                  <label class="contact__checkbox-label">
+                    <input
+                      class="contact__checkbox"
+                      type="checkbox"
+                      name="privacy"
+                      required
+                    />
+                    <span class="contact__checkmark"></span>
+                    <span class="contact__checkbox-text">
+                      Acconsento al trattamento dei dati personali ai sensi del
+                      GDPR e della
+                      <a
+                        href="/privacy-policy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Privacy Policy</a
+                      >. <span class="contact__req">*</span>
+                    </span>
+                  </label>
+                  <span class="contact__error" data-error="privacy"></span>
+                </div>
+
+                <div class="contact__field contact__field--full">
+                  <button class="contact__submit" type="submit">
+                    <span class="contact__submit-text">Invia messaggio</span>
+                    <svg
+                      class="contact__submit-icon"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <line x1="22" y1="2" x2="11" y2="13" />
+                      <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- INFO -->
+            <div class="contact__info" data-reveal data-reveal-d="1">
+              <div class="contact__info-block">
+                <h3 class="contact__info-title">Cosa succede dopo</h3>
+                <div class="contact__steps">
+                  <div class="contact__step">
+                    <span class="contact__step-num">01</span>
+                    <div>
+                      <h4 class="contact__step-title">Leggiamo il messaggio</h4>
+                      <p class="contact__step-text">
+                        Analizziamo la tua richiesta e prepariamo un primo
+                        riscontro concreto.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="contact__step">
+                    <span class="contact__step-num">02</span>
+                    <div>
+                      <h4 class="contact__step-title">
+                        Ti rispondiamo entro 24h
+                      </h4>
+                      <p class="contact__step-text">
+                        Con domande mirate o direttamente una proposta di call
+                        conoscitiva.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="contact__step">
+                    <span class="contact__step-num">03</span>
+                    <div>
+                      <h4 class="contact__step-title">Call senza impegno</h4>
+                      <p class="contact__step-text">
+                        30 minuti per capire obiettivi, contesto e valutare
+                        insieme il percorso migliore.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact__info-block contact__info-block--alt">
+                <h3 class="contact__info-title">Contatto diretto</h3>
+                <div class="contact__direct">
+                  <a
+                    href="mailto:info@imediatop.it"
+                    class="contact__direct-item"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                      />
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                    <span>info@imediatop.it</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact__info-block contact__info-block--trust">
+                <div class="contact__trust-item">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg>
+                  <span>Risposta entro 24 ore</span>
+                </div>
+                <div class="contact__trust-item">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg>
+                  <span>Nessun obbligo di acquisto</span>
+                </div>
+                <div class="contact__trust-item">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg>
+                  <span>Dati trattati con riservatezza</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Success Popup Overlay -->
+    <div class="success-popup" id="contactSuccess" aria-hidden="true">
+      <div class="success-popup__backdrop"></div>
+      <div class="success-popup__card">
+        <button
+          class="success-popup__close"
+          id="successClose"
+          aria-label="Chiudi"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+        <div class="success-popup__icon">
+          <svg
+            width="56"
+            height="56"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+            <polyline points="22 4 12 14.01 9 11.01" />
+          </svg>
+        </div>
+        <h3 class="success-popup__title">Messaggio inviato!</h3>
+        <p class="success-popup__text">
+          Ti risponderemo entro 24 ore.<br />Controlla anche la cartella spam.
+        </p>
+        <button class="success-popup__btn" id="successOk">
+          Perfetto, grazie
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__intro">
+        <h2 class="footer__intro-title">
+          Costruiamo insieme qualcosa che duri.
+        </h2>
+        <p class="footer__intro-text">
+          Scrivici o prenota una call: il primo passo è tuo.
+        </p>
+      </div>
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img
+            src="/assets/img/logo/logo-imediatopDEF.png"
+            alt="iMediaTop Logo"
+            class="footer__logo"
+          />
+          <p class="footer__tagline">
+            Soluzioni digitali su misura, pensate per durare.
+          </p>
+        </div>
+        <nav class="footer__nav">
+          <h4 class="footer__heading">Navigazione</h4>
+          <ul class="footer__links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/come-funziona">Come funziona</a></li>
+            <li><a href="/services">Servizi</a></li>
+            <li><a href="/sitiweb">Siti Web</a></li>
+            <li><a href="/sviluppo">Sviluppo</a></li>
+            <li><a href="/contatti">Contatti</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav">
+          <h4 class="footer__heading">Legale</h4>
+          <ul class="footer__links">
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/cookie-policy">Cookie Policy</a></li>
+            <li><a href="/termini-condizioni">Termini e Condizioni</a></li>
+          </ul>
+        </nav>
+        <div class="footer__connect">
+          <h4 class="footer__heading">Seguici</h4>
+          <div class="footer__socials">
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.337-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-2.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 iMediaTop. Tutti i diritti riservati.</p>
+        <p>P.IVA IT03143470734</p>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="/assets/js/contact.js"></script>
+  </body>
+</html>

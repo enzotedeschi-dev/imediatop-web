@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test Stripe Checkout – iMediaTop</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 480px; margin: 2rem auto; padding: 0 1rem; }
+    h1 { font-size: 1.25rem; }
+    label { display: block; margin-top: 1rem; }
+    input { width: 100%; padding: 0.5rem; margin-top: 0.25rem; box-sizing: border-box; }
+    button { margin-top: 1rem; padding: 0.75rem 1.5rem; background: #635bff; color: white; border: none; border-radius: 6px; cursor: pointer; }
+    button:disabled { opacity: 0.6; cursor: not-allowed; }
+    .error { color: #c00; margin-top: 0.5rem; }
+    .hint { font-size: 0.875rem; color: #666; margin-top: 0.25rem; }
+  </style>
+</head>
+<body>
+  <h1>Test Stripe Checkout</h1>
+  <p>Usa questa pagina per provare il flusso di pagamento (modalità test Stripe).</p>
+
+  <label>
+    URL backend (App Runner)
+    <input type="text" id="backendUrl" value="https://dashboard.imediatop.it" placeholder="https://xxx.awsapprunner.com" />
+    <span class="hint">Base URL del backend senza / alla fine</span>
+  </label>
+
+  <label>
+    Price ID (Stripe – modalità test)
+    <input type="text" id="priceId" placeholder="price_xxxx" />
+    <span class="hint">Da Stripe Dashboard → Prodotti → prezzo (es. price_1ABC...)</span>
+  </label>
+
+  <label>
+    Email (opzionale)
+    <input type="email" id="customerEmail" placeholder="test@example.com" />
+  </label>
+
+  <button type="button" id="btnCheckout">Vai al checkout Stripe</button>
+  <p id="error" class="error" style="display:none;"></p>
+
+  <script>
+    document.getElementById("btnCheckout").onclick = async function () {
+      const backend = document.getElementById("backendUrl").value.trim().replace(/\/$/, "");
+      const priceId = document.getElementById("priceId").value.trim();
+      const email = document.getElementById("customerEmail").value.trim();
+      const errEl = document.getElementById("error");
+
+      errEl.style.display = "none";
+          errEl.textContent = "";
+
+      if (!backend) {
+        errEl.textContent = "Inserisci l'URL del backend.";
+        errEl.style.display = "block";
+        return;
+      }
+      if (!priceId) {
+        errEl.textContent = "Inserisci il Price ID da Stripe (es. price_1ABC...).";
+        errEl.style.display = "block";
+        return;
+      }
+
+      this.disabled = true;
+      try {
+        const res = await fetch(backend + "/api/payments/checkout-session", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            price_id: priceId,
+            quantity: 1,
+            customer_email: email || undefined
+          })
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) {
+          errEl.textContent = data.detail || data.message || "Errore " + res.status;
+          errEl.style.display = "block";
+          return;
+        }
+        if (data.url) {
+          window.location.href = data.url;
+        } else {
+          errEl.textContent = "Il backend non ha restituito l'URL di checkout.";
+          errEl.style.display = "block";
+        }
+      } catch (e) {
+        errEl.textContent = "Errore di rete: " + e.message;
+        errEl.style.display = "block";
+      } finally {
+        this.disabled = false;
+      }
+    };
+  </script>
+</body>
+</html>

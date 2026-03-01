@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sviluppo | iMediaTop</title>
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="Sviluppo software su misura, automazione aziendale, integrazione sistemi. Costi trasparenti e metodo strutturato per la digitalizzazione delle PMI."
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/" aria-label="Torna alla home">
+        <img
+          src="/assets/img/logo/logo-imediatopDEF.png"
+          alt="iMediaTop Logo"
+          class="nav__logo"
+        />
+      </a>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <ul class="nav__list">
+        <li><a href="/" class="nav__link">Home</a></li>
+        <li>
+          <a href="/come-funziona" class="nav__link">Come funziona</a>
+        </li>
+        <li><a href="/services" class="nav__link">Servizi</a></li>
+        <li><a href="/sitiweb" class="nav__link">Siti Web</a></li>
+        <li>
+          <a href="/sviluppo" class="nav__link">Sviluppo</a>
+        </li>
+        <li><a href="/contatti" class="nav__link">Contatti</a></li>
+        <li class="nav__list-cta">
+          <a
+            href="https://dashboard.imediatop.it/client"
+            class="nav__link nav__link--reserved"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Area riservata</a
+          >
+        </li>
+      </ul>
+      <a
+        href="https://dashboard.imediatop.it/client"
+        class="nav__cta"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Area riservata</a
+      >
+    </nav>
+
+    <!-- ============================
+         1. HERO
+         ============================ -->
+    <header class="header header--services">
+      <canvas class="header__canvas" id="neuralCanvas"></canvas>
+      <div class="hero">
+        <h1 class="hero__title hero__title--sviluppo">
+          Sviluppo digitale con metodo strutturato professionale
+        </h1>
+        <p class="hero__subtitle">
+          Costruiamo soluzioni su misura con scope chiaro, costi trasparenti e
+          un piano di evoluzione strutturato.
+        </p>
+        <a href="#software" class="hero__cta">Scopri le soluzioni ↓</a>
+      </div>
+      <div class="header__scroll">
+        <span class="header__scrolldot">•</span>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============================
+           2. SOFTWARE SU MISURA — Range Slider Rows
+           ============================ -->
+      <section class="sw-range" id="software">
+        <div class="sw-range__inner">
+          <div class="sw-range__header" data-reveal>
+            <span class="services__tag">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+                />
+              </svg>
+              Sviluppo software su misura
+            </span>
+            <h2 class="sw-range__title">Software su misura</h2>
+            <p class="sw-range__subtitle">
+              Non esistono pacchetti standard per software gestionale. Ogni
+              progetto parte da un'analisi tecnica e si costruisce intorno ai
+              tuoi flussi operativi reali.
+            </p>
+          </div>
+
+          <div class="sw-range__list">
+            <div class="sw-range__row" data-sw-row>
+              <div class="sw-range__bar" aria-hidden="true"></div>
+              <div class="sw-range__glow" aria-hidden="true"></div>
+              <div class="sw-range__info">
+                <h3 class="sw-range__label">Analisi e Strategia</h3>
+                <p class="sw-range__desc">
+                  Raccolta requisiti, mappatura flussi, definizione scope e
+                  priorità MVP. Il punto di partenza per ogni progetto
+                  strutturato.
+                </p>
+              </div>
+            </div>
+
+            <div class="sw-range__row" data-sw-row>
+              <div class="sw-range__bar" aria-hidden="true"></div>
+              <div class="sw-range__glow" aria-hidden="true"></div>
+              <div class="sw-range__info">
+                <h3 class="sw-range__label">MVP software</h3>
+                <p class="sw-range__desc">
+                  Prima versione funzionante con le feature essenziali. Validare
+                  il valore prima di investire nell'evoluzione completa.
+                </p>
+              </div>
+            </div>
+
+            <div class="sw-range__row" data-sw-row>
+              <div class="sw-range__bar" aria-hidden="true"></div>
+              <div class="sw-range__glow" aria-hidden="true"></div>
+              <div class="sw-range__info">
+                <h3 class="sw-range__label">Software gestionale completo</h3>
+                <p class="sw-range__desc">
+                  Piattaforma completa con integrazioni, ruoli, automazioni e
+                  dashboard. Architettura pensata per scalare.
+                </p>
+              </div>
+            </div>
+
+            <div class="sw-range__row" data-sw-row>
+              <div class="sw-range__bar" aria-hidden="true"></div>
+              <div class="sw-range__glow" aria-hidden="true"></div>
+              <div class="sw-range__info">
+                <h3 class="sw-range__label">Progetti multi-integrazione</h3>
+                <p class="sw-range__desc">
+                  Ecosistemi complessi con più sistemi, API esterne e logiche di
+                  business articolate. Valutazione dedicata.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sw-range__cta" data-reveal>
+            <a href="/contatti" class="sw-range__cta-link">Contattaci</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================
+           4. AUTOMAZIONE — Interactive Pillars
+           ============================ -->
+      <section class="pillars" id="automazione">
+        <div class="pillars__inner">
+          <div class="pillars__header" data-reveal>
+            <span class="services__tag">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+              Automazione operativa
+            </span>
+            <h2 class="pillars__title">Automazione aziendale</h2>
+            <p class="pillars__subtitle">
+              Eliminare le attività manuali ripetitive non è un lusso: è una
+              leva operativa. Automatizziamo workflow, approvazioni e flussi
+              dati per liberare tempo e ridurre errori.
+            </p>
+          </div>
+
+          <div class="pillars__grid">
+            <div class="pillars__col" data-reveal data-pillar>
+              <div class="pillars__icon-wrap">
+                <svg
+                  class="pillars__icon"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="17 1 21 5 17 9" />
+                  <path d="M3 11V9a4 4 0 0 1 4-4h14" />
+                  <polyline points="7 23 3 19 7 15" />
+                  <path d="M21 13v2a4 4 0 0 1-4 4H3" />
+                </svg>
+              </div>
+              <h3 class="pillars__label">Workflow base</h3>
+              <p class="pillars__desc">
+                Automazioni singole: notifiche, approvazioni, aggiornamento dati
+                tra strumenti.
+              </p>
+              <p class="pillars__detail">
+                Ideale per eliminare i primi colli di bottiglia operativi senza
+                stravolgere i flussi esistenti.
+              </p>
+            </div>
+
+            <div class="pillars__col" data-reveal data-reveal-d="1" data-pillar>
+              <div class="pillars__icon-wrap">
+                <svg
+                  class="pillars__icon"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+              </div>
+              <h3 class="pillars__label">Multi-sistema</h3>
+              <p class="pillars__desc">
+                Orchestrazione flussi tra CRM, gestionale, email, magazzino con
+                logiche condizionali.
+              </p>
+              <p class="pillars__detail">
+                Automazione strutturata con retry, log e monitoraggio. Non
+                script fragili.
+              </p>
+            </div>
+
+            <div class="pillars__col" data-reveal data-reveal-d="2" data-pillar>
+              <div class="pillars__icon-wrap">
+                <svg
+                  class="pillars__icon"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                  <path d="M2 17l10 5 10-5" />
+                  <path d="M2 12l10 5 10-5" />
+                </svg>
+              </div>
+              <h3 class="pillars__label">Integrazione AI</h3>
+              <p class="pillars__desc">
+                Classificazione documenti, estrazione dati, analisi predittiva
+                nei processi.
+              </p>
+              <p class="pillars__detail">
+                AI solo dove crea vantaggio operativo reale, con controllo e
+                tracciabilità.
+              </p>
+            </div>
+          </div>
+
+          <div class="pillars__benefits" data-reveal>
+            <span class="pillars__benefit">Riduzione attività manuali</span>
+            <span class="pillars__benefit">Eliminazione errori</span>
+            <span class="pillars__benefit">Tracciabilità completa</span>
+          </div>
+          <div class="pillars__cta" data-reveal>
+            <a href="/contatti" class="pillars__cta-link">Contattaci</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================
+           5. INTEGRAZIONE — Dark Split Panels
+           ============================ -->
+      <section class="split-dark" id="integrazione">
+        <div class="split-dark__inner">
+          <div class="split-dark__header" data-reveal>
+            <span class="for-who__tag">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+              Integrazione sistemi
+            </span>
+            <h2 class="split-dark__title">Integrazione sistemi</h2>
+            <p class="split-dark__subtitle">
+              Collegare i sistemi che già usi significa eliminare il doppio
+              lavoro, avere dati sincronizzati e un'unica fonte di verità.
+            </p>
+          </div>
+
+          <div class="split-dark__grid">
+            <div
+              class="split-dark__panel"
+              data-split-panel
+              data-split-dir="left"
+            >
+              <div class="split-dark__glow" aria-hidden="true"></div>
+              <h3 class="split-dark__label">Integrazione singola API</h3>
+              <p class="split-dark__desc">
+                Collegamento diretto tra due sistemi: sincronizzazione dati,
+                webhook, mapping campi. Ideale per connettere CRM, gestionale o
+                piattaforma e-commerce.
+              </p>
+            </div>
+
+            <div
+              class="split-dark__panel"
+              data-split-panel
+              data-split-dir="right"
+            >
+              <div class="split-dark__glow" aria-hidden="true"></div>
+              <h3 class="split-dark__label">Middleware personalizzato</h3>
+              <p class="split-dark__desc">
+                Layer intermedio che orchestra comunicazione tra più sistemi.
+                Trasformazione dati, code, retry e monitoraggio. Architettura
+                pensata per evolvere.
+              </p>
+            </div>
+          </div>
+
+          <div class="split-dark__benefits" data-reveal>
+            <span class="split-dark__benefit">Dati sincronizzati</span>
+            <span class="split-dark__benefit">Niente doppio lavoro</span>
+            <span class="split-dark__benefit">Un'unica fonte di verità</span>
+          </div>
+          <div class="split-dark__cta" data-reveal>
+            <a href="/contatti" class="split-dark__cta-link">Contattaci</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================
+           6. SUPPORTO — Interactive Comparison
+           ============================ -->
+      <section class="support-tiers" id="supporto">
+        <div class="support-tiers__inner">
+          <div class="support-tiers__header" data-reveal>
+            <span class="services__tag">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              Supporto continuo
+            </span>
+            <h2 class="support-tiers__title">Supporto e manutenzione</h2>
+            <p class="support-tiers__subtitle">
+              Il software è un asset vivo. Dopo il lancio serve monitoraggio,
+              manutenzione e un piano di evoluzione basato su dati reali.
+            </p>
+          </div>
+
+          <div class="support-tiers__grid">
+            <div class="support-tiers__col" data-reveal data-support-tier>
+              <h3 class="support-tiers__name">Base</h3>
+              <ul class="support-tiers__features">
+                <li>Monitoraggio applicativo</li>
+                <li>Aggiornamenti sicurezza</li>
+                <li>Interventi correttivi</li>
+                <li>Assistenza tecnica email</li>
+              </ul>
+            </div>
+
+            <div
+              class="support-tiers__col support-tiers__col--mid"
+              data-reveal
+              data-reveal-d="1"
+              data-support-tier
+            >
+              <h3 class="support-tiers__name">Evolutivo</h3>
+              <ul class="support-tiers__features">
+                <li>Tutto del piano Base</li>
+                <li data-tier-extra>Sviluppo nuove feature</li>
+                <li data-tier-extra>Ottimizzazioni continue</li>
+                <li data-tier-extra>Priorità condivise</li>
+                <li data-tier-extra>Rilasci regolari</li>
+              </ul>
+            </div>
+
+            <div
+              class="support-tiers__col"
+              data-reveal
+              data-reveal-d="2"
+              data-support-tier
+            >
+              <h3 class="support-tiers__name">SLA dedicato</h3>
+              <ul class="support-tiers__features">
+                <li>Tutto del piano Evolutivo</li>
+                <li data-tier-extra>Tempi di risposta garantiti</li>
+                <li data-tier-extra>Reperibilità estesa</li>
+                <li data-tier-extra>Interventi prioritari</li>
+                <li data-tier-extra>Reporting dedicato</li>
+              </ul>
+            </div>
+          </div>
+          <div class="support-tiers__cta" data-reveal>
+            <a href="/contatti" class="support-tiers__cta-link">Contattaci</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================
+           7. COME DEFINIAMO IL BUDGET
+           ============================ -->
+      <section class="budget-method" id="budget">
+        <div class="budget-method__inner">
+          <div class="budget-method__header" data-reveal>
+            <span class="budget-method__tag">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+              Il nostro metodo
+            </span>
+            <h2 class="budget-method__title">Come definiamo il budget</h2>
+          </div>
+
+          <div class="budget-method__track">
+            <div class="budget-method__line" aria-hidden="true"></div>
+
+            <div class="budget-method__step" data-reveal>
+              <span class="budget-method__num">01</span>
+              <h3 class="budget-method__step-title">Call iniziale</h3>
+              <p class="budget-method__step-text">
+                Capiamo obiettivi, contesto e vincoli in 30 minuti.
+              </p>
+            </div>
+
+            <div class="budget-method__step" data-reveal data-reveal-d="1">
+              <span class="budget-method__num">02</span>
+              <h3 class="budget-method__step-title">Analisi tecnica</h3>
+              <p class="budget-method__step-text">
+                Mappiamo flussi, requisiti e priorità per definire lo scope.
+              </p>
+            </div>
+
+            <div class="budget-method__step" data-reveal data-reveal-d="2">
+              <span class="budget-method__num">03</span>
+              <h3 class="budget-method__step-title">Definizione MVP</h3>
+              <p class="budget-method__step-text">
+                Identifichiamo il minimo prodotto di valore per partire.
+              </p>
+            </div>
+
+            <div class="budget-method__step" data-reveal data-reveal-d="3">
+              <span class="budget-method__num">04</span>
+              <h3 class="budget-method__step-title">Roadmap</h3>
+              <p class="budget-method__step-text">
+                Piano di evoluzione con milestone e rilasci progressivi.
+              </p>
+            </div>
+
+            <div class="budget-method__step" data-reveal data-reveal-d="4">
+              <span class="budget-method__num">05</span>
+              <h3 class="budget-method__step-title">Preventivo trasparente</h3>
+              <p class="budget-method__step-text">
+                Costi per fase, tempi realistici e nessuna sorpresa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================
+           8. POSIZIONAMENTO
+           ============================ -->
+      <section class="positioning">
+        <div class="positioning__inner" data-reveal>
+          <h2 class="positioning__title">Perché non siamo i più economici</h2>
+          <p class="positioning__text">
+            Costruiamo soluzioni solide, manutenibili e pensate per durare. Non
+            ottimizziamo sul prezzo: ottimizziamo sul valore nel tempo. Ogni
+            progetto ha architettura, documentazione e standard che riducono il
+            costo totale di ownership. Chi sceglie il prezzo più basso spesso
+            paga due volte: prima per costruire, poi per ricostruire. Noi
+            preferiamo fare bene una volta sola.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================
+           9. CTA FINALE
+           ============================ -->
+      <section class="cta" id="contatti">
+        <canvas class="cta__canvas" id="ctaWaveCanvas"></canvas>
+        <div class="cta__inner" data-reveal>
+          <h2 class="cta__title">Parliamo del tuo progetto</h2>
+          <p class="cta__text">
+            Raccontaci cosa vuoi costruire o migliorare: ti proponiamo un
+            percorso chiaro con scope, tempi e costi definiti.
+          </p>
+          <a href="/contatti" class="cta__button">Prenota una call →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__intro">
+        <h2 class="footer__intro-title">
+          Costruiamo insieme qualcosa che duri.
+        </h2>
+        <p class="footer__intro-text">
+          Scrivici o prenota una call: il primo passo è tuo.
+        </p>
+      </div>
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img
+            src="/assets/img/logo/logo-imediatopDEF.png"
+            alt="iMediaTop Logo"
+            class="footer__logo"
+          />
+          <p class="footer__tagline">
+            Soluzioni digitali su misura, pensate per durare.
+          </p>
+        </div>
+        <nav class="footer__nav">
+          <h4 class="footer__heading">Navigazione</h4>
+          <ul class="footer__links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/come-funziona">Come funziona</a></li>
+            <li><a href="/services">Servizi</a></li>
+            <li><a href="/sitiweb">Siti Web</a></li>
+            <li><a href="/sviluppo">Sviluppo</a></li>
+            <li><a href="/contatti">Contatti</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav">
+          <h4 class="footer__heading">Legale</h4>
+          <ul class="footer__links">
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/cookie-policy">Cookie Policy</a></li>
+            <li><a href="/termini-condizioni">Termini e Condizioni</a></li>
+          </ul>
+        </nav>
+        <div class="footer__connect">
+          <h4 class="footer__heading">Seguici</h4>
+          <div class="footer__socials">
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.337-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-2.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 iMediaTop. Tutti i diritti riservati.</p>
+        <p>P.IVA IT03143470734</p>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

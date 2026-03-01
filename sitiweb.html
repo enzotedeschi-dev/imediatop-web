@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siti Web | iMediaTop</title>
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="Siti web professionali in abbonamento: veloci, aggiornati e credibili. Piani Basic, Business e Pro con hosting, dominio e supporto incluso. Per PMI che vogliono presenza online che evolve."
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/" aria-label="Torna alla home">
+        <img
+          src="/assets/img/logo/logo-imediatopDEF.png"
+          alt="iMediaTop Logo"
+          class="nav__logo"
+        />
+      </a>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <ul class="nav__list">
+        <li><a href="/" class="nav__link">Home</a></li>
+        <li>
+          <a href="/come-funziona" class="nav__link">Come funziona</a>
+        </li>
+        <li><a href="/services" class="nav__link">Servizi</a></li>
+        <li><a href="/sitiweb" class="nav__link">Siti Web</a></li>
+        <li>
+          <a href="/sviluppo" class="nav__link">Sviluppo</a>
+        </li>
+        <li><a href="/contatti" class="nav__link">Contatti</a></li>
+        <li class="nav__list-cta">
+          <a
+            href="https://dashboard.imediatop.it/client"
+            class="nav__link nav__link--reserved"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Area riservata</a
+          >
+        </li>
+      </ul>
+      <a
+        href="https://dashboard.imediatop.it/client"
+        class="nav__cta"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Area riservata</a
+      >
+    </nav>
+
+    <!-- ============================
+         HERO
+         ============================ -->
+    <header class="header header--services">
+      <canvas class="header__canvas" id="neuralCanvas"></canvas>
+      <div class="hero">
+        <h1 class="hero__title hero__title--sitiweb">
+          Un sito che evolve con la tua azienda
+        </h1>
+        <p class="hero__subtitle">
+          Presenza online professionale in abbonamento: veloce, aggiornata e
+          credibile.
+        </p>
+        <a href="#pricing" class="hero__cta">Scopri i piani ↓</a>
+      </div>
+      <div class="header__scroll">
+        <span class="header__scrolldot">•</span>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============================
+           SITI WEB IN ABBONAMENTO
+           ============================ -->
+      <section class="pricing" id="pricing">
+        <div class="pricing__inner">
+          <div class="pricing__header" data-reveal>
+            <span class="pricing__tag">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                />
+              </svg>
+              Siti web professionali
+            </span>
+            <h2 class="pricing__title">
+              Un sito che evolve con la tua azienda
+            </h2>
+            <p class="pricing__subtitle">
+              Per molte PMI il sito non è un progetto una tantum: è uno
+              strumento operativo che deve restare veloce, aggiornato e
+              credibile nel tempo. Per questo lo offriamo in abbonamento, con
+              tutto incluso.
+            </p>
+          </div>
+
+          <div class="pricing-toggle">
+            <button type="button" class="toggle-btn active" data-plan="monthly">
+              Mensile
+            </button>
+            <button type="button" class="toggle-btn" data-plan="annual">
+              Annuale <span class="save-badge">Risparmia 10%</span>
+            </button>
+          </div>
+
+          <div class="pricing__grid">
+            <!-- BASIC -->
+            <div class="pricing__card" data-reveal data-pricing-card>
+              <div class="pricing__glow" aria-hidden="true"></div>
+              <div class="annual-badge hidden">Risparmia 10%</div>
+              <span class="pricing__plan">Basic</span>
+              <div class="pricing__price">
+                <span
+                  class="pricing__amount"
+                  data-monthly="29,99"
+                  data-annual="299"
+                  >29,99</span
+                >
+                <span class="pricing__period">/mese</span>
+              </div>
+              <p class="pricing__desc">
+                Sito vetrina professionale per chi vuole presenza online solida
+                e manutenuta.
+              </p>
+              <ul class="pricing__features">
+                <li>Sito vetrina con una pagina</li>
+                <li>Design responsive</li>
+                <li>Hosting incluso</li>
+                <li>Dominio incluso</li>
+                <li>Certificato SSL</li>
+                <li>Aggiornamenti tecnici base</li>
+                <li>1 modifica contenuti/mese</li>
+                <li>Supporto email</li>
+              </ul>
+              <a
+                href="https://dashboard.imediatop.it/signup?plan=basic&billing=monthly"
+                class="pricing__cta"
+                >Inizia con Basic</a
+              >
+            </div>
+
+            <!-- BUSINESS -->
+            <div
+              class="pricing__card pricing__card--featured"
+              data-reveal
+              data-reveal-d="1"
+              data-pricing-card
+            >
+              <div class="pricing__glow" aria-hidden="true"></div>
+              <div class="annual-badge hidden">Risparmia 10%</div>
+              <span class="pricing__badge">Consigliato</span>
+              <span class="pricing__plan">Business</span>
+              <div class="pricing__price">
+                <span
+                  class="pricing__amount"
+                  data-monthly="59,99"
+                  data-annual="599"
+                  >59,99</span
+                >
+                <span class="pricing__period">/mese</span>
+              </div>
+              <p class="pricing__desc">
+                Per aziende che vogliono visibilità, performance e integrazione
+                con i propri strumenti.
+              </p>
+              <ul class="pricing__features">
+                <li>Fino a 10 pagine</li>
+                <li>SEO tecnica base</li>
+                <li>Performance ottimizzate</li>
+                <li>Modulo contatti avanzato</li>
+                <li>Integrazione base CRM/email marketing</li>
+                <li>3 modifiche contenuti/mese</li>
+                <li>Report traffico trimestrale</li>
+                <li>Supporto prioritario email</li>
+              </ul>
+              <a
+                href="https://dashboard.imediatop.it/signup?plan=business&billing=monthly"
+                class="pricing__cta"
+                >Scegli Business</a
+              >
+            </div>
+
+            <!-- PRO -->
+            <div
+              class="pricing__card"
+              data-reveal
+              data-reveal-d="2"
+              data-pricing-card
+            >
+              <div class="pricing__glow" aria-hidden="true"></div>
+              <div class="annual-badge hidden">Risparmia 10%</div>
+              <span class="pricing__plan">Pro</span>
+              <div class="pricing__price">
+                <span
+                  class="pricing__amount"
+                  data-monthly="99,99"
+                  data-annual="999"
+                  >99,99</span
+                >
+                <span class="pricing__period">/mese</span>
+              </div>
+              <p class="pricing__desc">
+                Sito completo con SEO avanzata, automazioni e analytics
+                personalizzata.
+              </p>
+              <ul class="pricing__features">
+                <li>Pagine illimitate</li>
+                <li>SEO tecnica avanzata</li>
+                <li>Ottimizzazione Core Web Vitals</li>
+                <li>Integrazione CRM completa</li>
+                <li>Automazioni base</li>
+                <li>Dashboard analytics personalizzata</li>
+                <li>Supporto prioritario</li>
+                <li>Modifiche illimitate (uso corretto)</li>
+              </ul>
+              <a
+                href="https://dashboard.imediatop.it/signup?plan=pro&billing=monthly"
+                class="pricing__cta"
+                >Scegli Pro</a
+              >
+            </div>
+          </div>
+
+          <div class="pricing-legal">
+            <p>
+              Il dominio è incluso esclusivamente nei piani annuali. Nei piani
+              mensili è previsto un contributo di attivazione. In caso di
+              mancato pagamento il servizio viene sospeso.
+            </p>
+          </div>
+
+          <div class="pricing__guarantees" data-reveal>
+            <span class="pricing__guarantee">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+              Nessun costo nascosto
+            </span>
+            <span class="pricing__guarantee">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+              Possibilità di evoluzione
+            </span>
+            <span class="pricing__guarantee">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+              Contratto chiaro e flessibile
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================
+           CTA
+           ============================ -->
+      <section class="cta" id="contatti">
+        <canvas class="cta__canvas" id="ctaWaveCanvas"></canvas>
+        <div class="cta__inner" data-reveal>
+          <h2 class="cta__title">Pronto per il tuo sito?</h2>
+          <p class="cta__text">
+            Raccontaci il tuo progetto: ti proponiamo il piano più adatto e un
+            preventivo senza impegno.
+          </p>
+          <a href="/contatti" class="cta__button">Richiedi una call →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__intro">
+        <h2 class="footer__intro-title">
+          Costruiamo insieme qualcosa che duri.
+        </h2>
+        <p class="footer__intro-text">
+          Scrivici o prenota una call: il primo passo è tuo.
+        </p>
+      </div>
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img
+            src="/assets/img/logo/logo-imediatopDEF.png"
+            alt="iMediaTop Logo"
+            class="footer__logo"
+          />
+          <p class="footer__tagline">
+            Soluzioni digitali su misura, pensate per durare.
+          </p>
+        </div>
+        <nav class="footer__nav">
+          <h4 class="footer__heading">Navigazione</h4>
+          <ul class="footer__links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/come-funziona">Come funziona</a></li>
+            <li><a href="/services">Servizi</a></li>
+            <li><a href="/sitiweb">Siti Web</a></li>
+            <li><a href="/sviluppo">Sviluppo</a></li>
+            <li><a href="/contatti">Contatti</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav">
+          <h4 class="footer__heading">Legale</h4>
+          <ul class="footer__links">
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/cookie-policy">Cookie Policy</a></li>
+            <li><a href="/termini-condizioni">Termini e Condizioni</a></li>
+          </ul>
+        </nav>
+        <div class="footer__connect">
+          <h4 class="footer__heading">Seguici</h4>
+          <div class="footer__socials">
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.337-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-2.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 iMediaTop. Tutti i diritti riservati.</p>
+        <p>P.IVA IT03143470734</p>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

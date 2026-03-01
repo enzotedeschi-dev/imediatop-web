@@ -1,0 +1,78 @@
+{
+  "outputDirectory": "frontend",
+  "rewrites": [
+    { "source": "/services", "destination": "/services.html" },
+    { "source": "/come-funziona", "destination": "/come-funziona.html" },
+    { "source": "/sviluppo", "destination": "/sviluppo.html" },
+    { "source": "/sitiweb", "destination": "/sitiweb.html" },
+    { "source": "/contatti", "destination": "/contatti.html" },
+    { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
+    { "source": "/cookie-policy", "destination": "/cookie-policy.html" },
+    {
+      "source": "/termini-condizioni",
+      "destination": "/termini-condizioni.html"
+    }
+  ],
+  "redirects": [
+    { "source": "/test-stripe", "destination": "/404", "statusCode": 404 },
+    { "source": "/test-stripe.html", "destination": "/404", "statusCode": 404 },
+    { "source": "/index.html", "destination": "/", "statusCode": 301 },
+    {
+      "source": "/services.html",
+      "destination": "/services",
+      "statusCode": 301
+    },
+    {
+      "source": "/come-funziona.html",
+      "destination": "/come-funziona",
+      "statusCode": 301
+    },
+    {
+      "source": "/sviluppo.html",
+      "destination": "/sviluppo",
+      "statusCode": 301
+    },
+    { "source": "/sitiweb.html", "destination": "/sitiweb", "statusCode": 301 },
+    {
+      "source": "/contatti.html",
+      "destination": "/contatti",
+      "statusCode": 301
+    },
+    {
+      "source": "/privacy-policy.html",
+      "destination": "/privacy-policy",
+      "statusCode": 301
+    },
+    {
+      "source": "/cookie-policy.html",
+      "destination": "/cookie-policy",
+      "statusCode": 301
+    },
+    {
+      "source": "/termini-condizioni.html",
+      "destination": "/termini-condizioni",
+      "statusCode": 301
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "geolocation=(), camera=(), microphone=()"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://api.emailjs.com; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.emailjs.com; frame-ancestors 'self';"
+        }
+      ]
+    }
+  ]
+}

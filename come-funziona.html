@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Come Funziona | iMediaTop</title>
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="Scopri il nostro metodo: 6 step chiari per sviluppo software su misura e siti web professionali. Processo in-house per PMI italiane."
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/" aria-label="Torna alla home">
+        <img
+          src="/assets/img/logo/logo-imediatopDEF.png"
+          alt="iMediaTop Logo"
+          class="nav__logo"
+        />
+      </a>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <ul class="nav__list">
+        <li><a href="/" class="nav__link">Home</a></li>
+        <li>
+          <a href="/come-funziona" class="nav__link">Come funziona</a>
+        </li>
+        <li><a href="/services" class="nav__link">Servizi</a></li>
+        <li><a href="/sitiweb" class="nav__link">Siti Web</a></li>
+        <li><a href="/sviluppo" class="nav__link">Sviluppo</a></li>
+        <li><a href="/contatti" class="nav__link">Contatti</a></li>
+        <li class="nav__list-cta">
+          <a
+            href="https://dashboard.imediatop.it/client"
+            class="nav__link nav__link--reserved"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Area riservata</a
+          >
+        </li>
+      </ul>
+      <a
+        href="https://dashboard.imediatop.it/client"
+        class="nav__cta"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Area riservata</a
+      >
+    </nav>
+
+    <header class="header header--services">
+      <canvas class="header__canvas" id="neuralCanvas"></canvas>
+      <div class="hero">
+        <h1 class="hero__title hero__title--come-funziona">
+          Come lavoriamo dal primo contatto al lancio
+        </h1>
+        <p class="hero__subtitle">
+          Metodo, priorità e consegne per step: così la tua PMI sa sempre cosa
+          stiamo costruendo, perché lo stiamo facendo e quando è pronto.
+        </p>
+        <a href="#timeline" class="hero__cta">Vedi i 6 step ↓</a>
+      </div>
+      <div class="header__scroll">
+        <span class="header__scrolldot">•</span>
+      </div>
+    </header>
+
+    <main class="process-page">
+      <section class="tl" id="timeline">
+        <div class="tl__header" data-reveal>
+          <span class="sv__pill">Il nostro processo</span>
+          <h2 class="tl__heading">
+            6 step per trasformare la tua idea in realtà
+          </h2>
+          <p class="tl__sub">
+            Un percorso strutturato, pensato per rendere i progetti chiari e
+            gestibili: chiarezza su scope, tempi e priorità. Niente sorprese,
+            solo risultati.
+          </p>
+        </div>
+
+        <div class="tl__track">
+          <div class="tl__line" aria-hidden="true">
+            <div class="tl__line-fill" id="tlLineFill"></div>
+          </div>
+
+          <article class="tl__step" data-tl-step>
+            <div class="tl__dot" aria-hidden="true">
+              <span class="tl__dot-num">01</span>
+            </div>
+            <div class="tl__card">
+              <h3 class="tl__card-title">Primo Contatto</h3>
+              <p class="tl__card-text">
+                Una call rapida per capire obiettivi, contesto e vincoli.
+                Facciamo domande mirate e definiamo insieme il risultato
+                misurabile da raggiungere.
+              </p>
+              <div class="tl__card-grid">
+                <div class="tl__card-col">
+                  <h4 class="tl__card-kicker">Attività</h4>
+                  <ul class="tl__card-list tl__card-list--dots">
+                    <li>Brief e raccolta esigenze</li>
+                    <li>Analisi del contesto (processi, strumenti, persone)</li>
+                    <li>Allineamento su obiettivi e priorità</li>
+                    <li>Prossimi step e modalità di lavoro</li>
+                  </ul>
+                </div>
+                <div class="tl__card-col">
+                  <h4 class="tl__card-kicker">Deliverable</h4>
+                  <ul class="tl__card-list tl__card-list--checks">
+                    <li>Riepilogo obiettivi e vincoli</li>
+                    <li>Requisiti ad alto livello e ipotesi</li>
+                    <li>Proposta di percorso e tempi indicativi</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tl__card-meta">
+                <div class="tl__meta-item">
+                  <span class="tl__meta-label">Timeline:</span>
+                  <span class="tl__meta-value">30–45 minuti</span>
+                </div>
+                <div class="tl__meta-item">
+                  <span class="tl__meta-label">Coinvolgimento Cliente:</span>
+                  <span class="tl__meta-value"
+                    >Basso — call e raccolta info</span
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl__step" data-tl-step>
+            <div class="tl__dot" aria-hidden="true">
+              <span class="tl__dot-num">02</span>
+            </div>
+            <div class="tl__card">
+              <h3 class="tl__card-title">Analisi &amp; Strategia</h3>
+              <p class="tl__card-text">
+                Definiamo scope e priorità: cosa serve per l'MVP e cosa lasciamo
+                alle evoluzioni. Qui impostiamo tempi, milestone e criterio di
+                successo.
+              </p>
+              <div class="tl__card-grid">
+                <div class="tl__card-col">
+                  <h4 class="tl__card-kicker">Attività</h4>
+                  <ul class="tl__card-list tl__card-list--dots">
+                    <li>Raccolta requisiti e casi d'uso</li>
+                    <li>Mappatura flussi e colli di bottiglia</li>
+                    <li>Priorità (MVP vs evoluzioni)</li>
+                    <li>Roadmap e milestone</li>
+                  </ul>
+                </div>
+                <div class="tl__card-col">
+                  <h4 class="tl__card-kicker">Deliverable</h4>
+                  <ul class="tl__card-list tl__card-list--checks">
+                    <li>Documento requisiti e scope</li>
+                    <li>Stima tempi/costi trasparente</li>
+                    <li>Piano di progetto per sprint</li>
+                    <li>Rischi, dipendenze e alternative</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tl__card-meta">
+                <div class="tl__meta-item">
+                  <span class="tl__meta-label">Timeline:</span>
+                  <span class="tl__meta-value">1–2 settimane</span>
+                </div>
+                <div class="tl__meta-item">
+                  <span class="tl__meta-label">Coinvolgimento Cliente:</span>
+                  <span class="tl__meta-value">Medio — review e decisioni</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl__step" data-tl-step>
+            <div class="tl__dot" aria-hidden="true">
+              <span class="tl__dot-num">03</span>
+            </div>
+            <div class="tl__card">
+              <h3 class="tl__card-title">Design &amp; Prototipo</h3>
+              <p class="tl__card-text">
+                Trasformiamo requisiti in un'interfaccia chiara e moderna. Prima
+                di sviluppare, validiamo flussi e UX con un prototipo
+                interattivo.
+              </p>
+              <div class="tl__card-grid">
+                <div class="tl__card-col">
+                  <h4 class="tl__card-kicker">Attività</h4>
+                  <ul class="tl__card-list tl__card-list--dots">
+                    <li>Wireframe e user flow</li>
+                    <li>Design UI coerente col brand</li>
+                    <li>Prototipo cliccabile</li>
+                    <li>Iterazioni rapide su feedback</li>
+                  </ul>
+                </div>
+                <div class="tl__card-col">
+                  <h4 class="tl__card-kicker">Deliverable</h4>
+                  <ul class="tl__card-list tl__card-list--checks">
+                    <li>Prototipo interattivo</li>
+                    <li>Layout e componenti approvati</li>
+                    <li>Specifiche pronte per sviluppo</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tl__card-meta">
+                <div class="tl__meta-item">
+                  <span class="tl__meta-label">Timeline:</span>
+                  <span class="tl__meta-value">1–3 settimane</span>
+                </div>
+                <div class="tl__meta-item">
+                  <span class="tl__meta-label">Coinvolgimento Cliente:</span>
+                  <span class="tl__meta-value"
+                    >Medio — feedback e approvazioni</span
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl__step" data-tl-step>
+            <div class="tl__dot" aria-hidden="true">
+              <span class="tl__dot-num">04</span>
+            </div>
+            <div class="tl__card">
+              <h3 class="tl__card-title">Sviluppo Software</h3>
+              <p class="tl__card-text">
+                Sviluppiamo in sprint con review regolari: tu vedi i progressi e
+                noi consegniamo valore reale. Tutto è tracciabile e pronto a
+                evolvere.
+              </p>
+              <div class="tl__card-grid">
+                <div class="tl__card-col">
+                  <h4 class="tl__card-kicker">Attività</h4>
+                  <ul class="tl__card-list tl__card-list--dots">
+                    <li>Implementazione funzionalità</li>
+                    <li>Integrazioni con sistemi esistenti</li>
+                    <li>Review e rilascio per sprint</li>
+                    <li>Ottimizzazione performance</li>
+                  </ul>
+                </div>
+                <div class="tl__card-col">
+                  <h4 class="tl__card-kicker">Deliverable</h4>
+                  <ul class="tl__card-list tl__card-list--checks">
+                    <li>Build funzionante ad ogni sprint</li>
+                    <li>Repository e ambiente configurati</li>
+                    <li>Release candidate</li>
+                    <li>Documentazione essenziale</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tl__card-meta">
+                <div class="tl__meta-item">
+                  <span class="tl__meta-label">Timeline:</span>
+                  <span class="tl__meta-value">4–12 settimane</span>
+                </div>
+                <div class="tl__meta-item">
+                  <span class="tl__meta-label">Coinvolgimento Cliente:</span>
+                  <span class="tl__meta-value">Medio/Alto — review sprint</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl__step" data-tl-step>
+            <div class="tl__dot" aria-hidden="true">
+              <span class="tl__dot-num">05</span>
+            </div>
+            <div class="tl__card">
+              <h3 class="tl__card-title">Test &amp; Qualità</h3>
+              <p class="tl__card-text">
+                Controlliamo tutto: bug, performance, compatibilità e sicurezza.
+                Prima del lancio facciamo un giro completo per consegnare un
+                prodotto affidabile.
+              </p>
+              <div class="tl__card-grid">
+                <div class="tl__card-col">
+                  <h4 class="tl__card-kicker">Attività</h4>
+                  <ul class="tl__card-list tl__card-list--dots">
+                    <li>Test funzionali e regressione</li>
+                    <li>Verifica performance</li>
+                    <li>Correzione bug prioritari</li>
+                    <li>Validazione flussi principali</li>
+                  </ul>
+                </div>
+                <div class="tl__card-col">
+                  <h4 class="tl__card-kicker">Deliverable</h4>
+                  <ul class="tl__card-list tl__card-list--checks">
+                    <li>Checklist qualità completata</li>
+                    <li>Release stabile pronta al deploy</li>
+                    <li>Report bug/ottimizzazioni</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tl__card-meta">
+                <div class="tl__meta-item">
+                  <span class="tl__meta-label">Timeline:</span>
+                  <span class="tl__meta-value">1–2 settimane</span>
+                </div>
+                <div class="tl__meta-item">
+                  <span class="tl__meta-label">Coinvolgimento Cliente:</span>
+                  <span class="tl__meta-value">Medio — UAT e conferme</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl__step" data-tl-step>
+            <div class="tl__dot" aria-hidden="true">
+              <span class="tl__dot-num">06</span>
+            </div>
+            <div class="tl__card">
+              <h3 class="tl__card-title">Lancio &amp; Supporto</h3>
+              <p class="tl__card-text">
+                Mettiamo online, monitoriamo e interveniamo se serve. Poi si
+                passa al miglioramento continuo: evoluzioni, automazioni e
+                integrazione AI dove crea vantaggio competitivo.
+              </p>
+              <div class="tl__card-grid">
+                <div class="tl__card-col">
+                  <h4 class="tl__card-kicker">Attività</h4>
+                  <ul class="tl__card-list tl__card-list--dots">
+                    <li>Deploy e configurazioni finali</li>
+                    <li>Monitoraggio e alert</li>
+                    <li>Supporto post-lancio</li>
+                    <li>Evoluzioni e nuove feature</li>
+                  </ul>
+                </div>
+                <div class="tl__card-col">
+                  <h4 class="tl__card-kicker">Deliverable</h4>
+                  <ul class="tl__card-list tl__card-list--checks">
+                    <li>Software online e funzionante</li>
+                    <li>Dashboard/monitoring attivo</li>
+                    <li>Piano manutenzione</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tl__card-meta">
+                <div class="tl__meta-item">
+                  <span class="tl__meta-label">Timeline:</span>
+                  <span class="tl__meta-value">Continuo</span>
+                </div>
+                <div class="tl__meta-item">
+                  <span class="tl__meta-label">Coinvolgimento Cliente:</span>
+                  <span class="tl__meta-value"
+                    >Variabile — in base alle priorità</span
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============================
+           FOR WHO — A CHI È PENSATO
+           ============================ -->
+      <section class="for-who">
+        <div class="for-who__inner">
+          <div class="for-who__header">
+            <span class="for-who__tag">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+              A chi è pensato
+            </span>
+            <h2 class="for-who__title">
+              <span class="for-who__title-word">Questo</span>
+              <span class="for-who__title-word">metodo</span>
+              <span class="for-who__title-word">è</span>
+              <span class="for-who__title-word">pensato</span>
+              <span class="for-who__title-word">per</span>
+              <span class="for-who__title-word">aziende</span>
+              <span class="for-who__title-word">che&hellip;</span>
+            </h2>
+          </div>
+
+          <div class="for-who__grid">
+            <div class="for-who__card" data-fw-card>
+              <div class="for-who__glow" aria-hidden="true"></div>
+              <span class="for-who__kicker" data-fw-counter data-fw-target="1"
+                >00</span
+              >
+              <div class="for-who__icon-wrap">
+                <svg
+                  class="for-who__icon"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="17 1 21 5 17 9" />
+                  <path d="M3 11V9a4 4 0 0 1 4-4h14" />
+                  <polyline points="7 23 3 19 7 15" />
+                  <path d="M21 13v2a4 4 0 0 1-4 4H3" />
+                </svg>
+                <span class="for-who__icon-ring" aria-hidden="true"></span>
+              </div>
+              <h3 class="for-who__card-title">
+                Hanno processi manuali ripetitivi
+              </h3>
+              <p class="for-who__card-text">
+                Attività copiate a mano, approvazioni via email, report
+                costruiti ogni volta da zero. Tempo sprecato che si trasforma in
+                costo.
+              </p>
+              <p class="for-who__card-detail">
+                Automatizziamo i flussi ripetitivi con software pensato sui tuoi
+                processi reali, liberando ore ogni settimana.
+              </p>
+            </div>
+
+            <div class="for-who__card" data-fw-card>
+              <div class="for-who__glow" aria-hidden="true"></div>
+              <span class="for-who__kicker" data-fw-counter data-fw-target="2"
+                >00</span
+              >
+              <div class="for-who__icon-wrap">
+                <svg
+                  class="for-who__icon"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                  <path d="M7 8h2m2 0h2m2 0h2" />
+                </svg>
+                <span class="for-who__icon-ring" aria-hidden="true"></span>
+              </div>
+              <h3 class="for-who__card-title">
+                Usano troppi strumenti non integrati
+              </h3>
+              <p class="for-who__card-text">
+                CRM, gestionale, fogli Excel, email: ogni strumento è un'isola.
+                I dati non si parlano e il team perde tempo a riallinearli.
+              </p>
+              <p class="for-who__card-detail">
+                Colleghiamo i tuoi strumenti in un ecosistema unico, con dati
+                sincronizzati e una sola fonte di verità.
+              </p>
+            </div>
+
+            <div class="for-who__card" data-fw-card>
+              <div class="for-who__glow" aria-hidden="true"></div>
+              <span class="for-who__kicker" data-fw-counter data-fw-target="3"
+                >00</span
+              >
+              <div class="for-who__icon-wrap">
+                <svg
+                  class="for-who__icon"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                  <path d="M2 17l10 5 10-5" />
+                  <path d="M2 12l10 5 10-5" />
+                </svg>
+                <span class="for-who__icon-ring" aria-hidden="true"></span>
+              </div>
+              <h3 class="for-who__card-title">
+                Vogliono digitalizzare senza caos
+              </h3>
+              <p class="for-who__card-text">
+                La digitalizzazione aziendale non deve significare mesi di
+                blocco operativo. Serve un percorso graduale, concreto, a basso
+                rischio.
+              </p>
+              <p class="for-who__card-detail">
+                Partiamo dall'MVP, rilasciamo per step e validiamo con il team
+                prima di andare avanti. Zero big-bang.
+              </p>
+            </div>
+
+            <div class="for-who__card" data-fw-card>
+              <div class="for-who__glow" aria-hidden="true"></div>
+              <span class="for-who__kicker" data-fw-counter data-fw-target="4"
+                >00</span
+              >
+              <div class="for-who__icon-wrap">
+                <svg
+                  class="for-who__icon"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                <span class="for-who__icon-ring" aria-hidden="true"></span>
+              </div>
+              <h3 class="for-who__card-title">
+                Vogliono controllo su tempi e budget
+              </h3>
+              <p class="for-who__card-text">
+                Niente preventivi vaghi o scope che esplode. Servono milestone
+                chiare, costi trasparenti e un partner che rispetti gli impegni.
+              </p>
+              <p class="for-who__card-detail">
+                Roadmap, sprint e stime condivise: sai sempre dove siamo, quanto
+                manca e quanto costa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================
+           OUTCOMES — COSA OTTIENI
+           ============================ -->
+      <section class="outcomes">
+        <div class="outcomes__inner">
+          <div class="outcomes__header" data-reveal>
+            <span class="outcomes__tag">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+              Risultati concreti
+            </span>
+            <h2 class="outcomes__title">Cosa ottieni con questo approccio</h2>
+          </div>
+          <div class="outcomes__row">
+            <div class="outcomes__block" data-reveal>
+              <span
+                class="outcomes__number"
+                data-oc-counter
+                data-oc-prefix=""
+                data-oc-suffix="%"
+                data-oc-target="100"
+                >0%</span
+              >
+              <h3 class="outcomes__label">Processi digitali chiari</h3>
+              <p class="outcomes__desc">
+                Flussi misurabili, tracciabili e sotto controllo dal giorno uno.
+              </p>
+            </div>
+            <div class="outcomes__block" data-reveal data-reveal-d="1">
+              <span
+                class="outcomes__number"
+                data-oc-counter
+                data-oc-prefix="–"
+                data-oc-suffix="%"
+                data-oc-target="70"
+                >0%</span
+              >
+              <h3 class="outcomes__label">Attività manuali</h3>
+              <p class="outcomes__desc">
+                Riduzione drastica di operazioni ripetitive e a basso valore.
+              </p>
+            </div>
+            <div class="outcomes__block" data-reveal data-reveal-d="2">
+              <span
+                class="outcomes__number"
+                data-oc-counter
+                data-oc-prefix=""
+                data-oc-suffix=""
+                data-oc-target="1"
+                >0</span
+              >
+              <h3 class="outcomes__label">Fonte unica di dati</h3>
+              <p class="outcomes__desc">
+                Dati centralizzati, sempre aggiornati e accessibili a tutto il
+                team.
+              </p>
+            </div>
+            <div class="outcomes__block" data-reveal data-reveal-d="3">
+              <span
+                class="outcomes__number"
+                data-oc-counter
+                data-oc-prefix=""
+                data-oc-suffix=""
+                data-oc-target="365"
+                >0</span
+              >
+              <h3 class="outcomes__label">Giorni l'anno di evoluzione</h3>
+              <p class="outcomes__desc">
+                Roadmap evolutiva invece di interventi spot: il software cresce
+                con te.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="contatti">
+        <canvas class="cta__canvas" id="ctaWaveCanvas"></canvas>
+        <div class="cta__inner" data-reveal>
+          <h2 class="cta__title">Pronto a iniziare?</h2>
+          <p class="cta__text">
+            Raccontaci cosa vuoi digitalizzare o automatizzare: ti proponiamo un
+            percorso chiaro e una stima realistica per partire con il piede
+            giusto.
+          </p>
+          <a href="/contatti" class="cta__button">Richiedi una call →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__intro">
+        <h2 class="footer__intro-title">
+          Costruiamo insieme qualcosa che duri.
+        </h2>
+        <p class="footer__intro-text">
+          Scrivici o prenota una call: il primo passo è tuo.
+        </p>
+      </div>
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img
+            src="/assets/img/logo/logo-imediatopDEF.png"
+            alt="iMediaTop Logo"
+            class="footer__logo"
+          />
+          <p class="footer__tagline">
+            Soluzioni digitali su misura, pensate per durare.
+          </p>
+        </div>
+        <nav class="footer__nav">
+          <h4 class="footer__heading">Navigazione</h4>
+          <ul class="footer__links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/come-funziona">Come funziona</a></li>
+            <li><a href="/services">Servizi</a></li>
+            <li><a href="/sitiweb">Siti Web</a></li>
+            <li><a href="/sviluppo">Sviluppo</a></li>
+            <li><a href="/contatti">Contatti</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav">
+          <h4 class="footer__heading">Legale</h4>
+          <ul class="footer__links">
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/cookie-policy">Cookie Policy</a></li>
+            <li><a href="/termini-condizioni">Termini e Condizioni</a></li>
+          </ul>
+        </nav>
+        <div class="footer__connect">
+          <h4 class="footer__heading">Seguici</h4>
+          <div class="footer__socials">
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.337-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-2.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 iMediaTop. Tutti i diritti riservati.</p>
+        <p>P.IVA IT03143470734</p>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
